@@ -1,5 +1,6 @@
 "use strict";
 var crypto = require('crypto');
+var crypto = require('crypto-x25x');
 
 function swapHex(value) {
   let s = value.toString(16);
