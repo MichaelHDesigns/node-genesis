@@ -1,6 +1,6 @@
 "use strict";
 var crypto = require('crypto');
-var crypto = require('crypto-x25x');
+var cryptox25x = require('crypto-x25x');
 
 function swapHex(value) {
   let s = value.toString(16);
@@ -51,6 +51,12 @@ function bytesLen(num) {
 function sha256(buffer) {
     var hash1 = crypto.createHash('sha256');
     hash1.update(buffer);
+    return hash1.digest();
+};
+
+function sha256(buffer) {
+    var x25x = cryptox25x.createHash('x25x');
+    x25x.update(buffer);
     return hash1.digest();
 };
 
