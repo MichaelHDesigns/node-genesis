@@ -54,7 +54,7 @@ function sha256(buffer) {
     return hash1.digest();
 };
 
-function sha256(buffer) {
+function x25x(buffer) {
     var x25x = cryptox25x.createHash('x25x');
     x25x.update(buffer);
     return hash1.digest();
